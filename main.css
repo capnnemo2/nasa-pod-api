@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.sweet-pic {
+    width: 100vh;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>NASA Photo of the Day</title>
+</head>
+<body>
+    <header>
+        <h1>NASA Photo of the Day</h1>
+    </header>
+
+    <form>
+        <fieldset>
+            <legend>Options</legend>
+            <label for="hd-option"></label>
+            <select id="hd-option">
+                <option value="true">Yes, HD. It's the only way to peer into the heavens!</option>
+                <option value="false">Regular, please. I don't have a NASA computer!</option>
+            </select>
+            <br>
+            <input id="query-date" type="date" placeholder="today">
+            <br>
+            <button type="submit">Show me stars</button>
+        </fieldset>
+    </form>
+
+    <div id="js-err-msg"></div>
+
+    <section id="results" class="hidden">
+        <div id="sweet-pic"></div>
+    </section>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
